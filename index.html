@@ -45,12 +45,14 @@
             }
             }
 
+            /* Tech icon yung animation na white muna bago magpakita */
             .tech-icon {
             opacity: 0;
             transform: translateY(20px);
             transition: transform 0.6s ease, opacity 0.6s ease;
             }
 
+            
             .tech-icon.animate {
             animation: floatIn 0.6s ease forwards;
             }
@@ -61,6 +63,28 @@
             .tech-icon:nth-child(even) {
             animation-delay: 0.2s;
             }
+
+            @keyframes float {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+            }
+
+            @keyframes float-up {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(5px); }
+            100% { transform: translateY(0); }
+            }
+
+            .float-animate {
+            animation: float 3s ease-in-out infinite;
+            }
+
+            .float-up-animate {
+            animation: float-up 3s ease-in-out infinite;
+            }
+
+
             .cursor {
                 display: inline-block;
                 background-color: transparent;
@@ -68,9 +92,32 @@
                 animation: blink 0.7s infinite;
             }
 
-            @keyframes blink {
+            @keyframes blinks {
                 0%, 100% { opacity: 1; }
                 50% { opacity: 0; }
+            }
+
+            .blinks-animate {
+            animation: blinks 6s ease-in-out infinite;
+            }
+
+            @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+
+            .rotate-animate {
+            animation: rotate 3s ease-in-out infinite;
+            }
+
+
+            /* hover grow yung nalaki pag nag hover ka sa item */
+            .hover-grow {
+                transition: transform 0.3s ease;
+            }
+
+            .hover-grow:hover {
+                transform: scale(1.08);
             }
 
 
@@ -97,7 +144,7 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead bg-dark text-light text-center">
-            <div class="container d-flex align-items-center flex-column tech-icon">
+            <div class="container d-flex align-items-center flex-column tech-icon ">
                 <!-- Masthead Avatar Image-->
                 <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
                 <img class="masthead-avatar mb-5" src="assets/img/nat_circle_with_border_ps.png" alt="..." />
@@ -131,65 +178,65 @@
                 <div class="row">
                     <div class="col-lg-4 ms-auto">
                         <p class="lead text-white">
-                            I am <span style="color: #F5F5DC">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
+                            I am <span class="blinks-animate" style="color: #F5F5DC">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
                         </p>
                     </div>
                     <div class="col-lg-4 me-auto">
                         <p class="lead" style="color: #F5F5DC">Languages, Tools, and Frameworks</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-start align-items-center">
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" height="40"/>
-                                <span class="text-white">Python</span>
+                                <span class="text-white ">Python</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" height="40"/>
                                 <span class="text-white">C#</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" height="40"/>
                                 <span class="text-white">HTML5</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" height="40"/>
                                 <span class="text-white">CSS3</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" height="40"/>
                                 <span class="text-white">JavaScript</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" height="40"/>
                                 <span class="text-white">Bootstrap</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" height="40"/>
                                 <span class="text-white">Django</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" height="40"/>
                                 <span class="text-white">Flask</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly-logo.png" alt="Plotly" height="40" style="background:#fff; border-radius:6px;"/>
                                 <span class="text-white"></span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau" height="40" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png';"/>
                                 <span class="text-white"></span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" height="40"/>
                                 <span class="text-white">SQL</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" height="40"/>
                                 <span class="text-white">Unity</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" height="40"/>
                                 <span class="text-white">Git</span>
                             </div>
-                            <div class="tech-icon">
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="40"/>
                                 <span class="text-white">GitHub</span>
                             </div>
@@ -197,7 +244,7 @@
                     </div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
+                <div class="text-center mt-4 hover-grow">
                     <a class="btn btn-xl btn-outline-light" href="resume.pdf" download="resume.pdf">
                         <i class="fas fa-download me-2"></i>
                         Download Resume
@@ -220,7 +267,7 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -229,7 +276,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -238,7 +285,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -247,7 +294,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -256,7 +303,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -265,7 +312,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -288,26 +335,27 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Practicum Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto">
-                        <div class="p-3" style="background-color: #4a4a4a; border-radius: 0.5rem;">
+                <div class="row d-flex">
+                    <div class="col-lg-4 d-flex">
+                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
                             <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Company Overview</p>
                             <p style="color: #e0e0e0;">Lattice Semiconductor is the low-power programmable leader. The company solves customer problems across the network, from Edge to Cloud, in communications, computing, industrial, automotive, and consumer markets.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 me-auto">
-                        <div class="p-3" style="background-color: #4a4a4a; border-radius: 0.5rem;">
+                    <div class="col-lg-4 d-flex">
+                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
                             <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Nature of Tasks given</p>
-                            <p style="color: #e0e0e0;">During my internship, I worked on dashboard tracker for the team I was assigned, developed a Python script to automate JIRA release notes, and developed Python scripts to automate images for their application.</p>
+                            <p style="color: #e0e0e0;">During my internship, I worked on dashboard tracker for the team I was assigned, developed a Python script to automate JIRA release notes, and to use Python scripts to automate images for their application.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 me-auto">
-                        <div class="p-3" style="background-color: #4a4a4a; border-radius: 0.5rem;">
+                    <div class="col-lg-4 d-flex">
+                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
                             <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Total of Hours rendered</p>
                             <p style="color: #e0e0e0;">From May 26, 2025 to July 28, 2025. I completed a total of <strong>324 hours.</strong></p>
                         </div>
                     </div>
                 </div>
+
                 <div class="row mt-4">
                     <div class="text-center">
                         <h4 class="lead mb-3" style="font-size: 1.4rem;">Synthesis of the Practicum Engagement</h4>
@@ -315,19 +363,19 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="p-3 mb-3" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
                             <p>I learned a lot during my practicum. I improved in communication and collaboration, which boosted my people skills. I also discovered that learning never stops — even in familiar tools and tasks. I explored new technologies like WebWorks ePublisher, Perforce, Linux/Unix systems, and Adobe Framemaker.</p>
                         </div>
-                        <div class="p-3 mb-3" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
                             <p>I also observed how quickly-paced the corporate environment is. Tasks are expected to be done immediately. Though I sometimes needed extra time to learn, my father's advice helped — “Don't wait for instructions. Take initiative.” This mindset allowed me to show my willingness to contribute.</p>
                         </div>
-                        <div class="p-3" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
                             <p>One challenge I faced was the delay in access to tools and accounts, which caused some stress. Despite that, I gave my best and took away many life and work lessons from this experience.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Practicum Section Button-->
-                <div class="text-center mt-4">
+                <div class="text-center mt-4 hover-grow">
                     <a class="btn btn-xl btn-outline-light" href="narrative_report.pdf" download="narrative_report.pdf">
                         <i class="fas fa-download me-2"></i>
                         Narrative Report
@@ -349,7 +397,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Info Box -->
-                <div class="row justify-content-center">
+                <div class="row justify-content-center hover-grow">
                     <div class="col-lg-8 col-xl-7">
                         <div class="p-4 bg-light border rounded shadow-sm">
                             <div class="contact-item mb-3">
@@ -396,7 +444,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-dark" href="https://github.com/nathan-rushing/help_dashboard_django" target="_blank" rel="noopener">
                                             <i class="fab fa-github me-2"></i>
                                             View on GitHub
@@ -441,7 +489,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-dark" href="https://github.com/goof312/RID_BLOOD02" target="_blank" rel="noopener">
                                             <i class="fab fa-github me-2"></i>
                                             View on GitHub
@@ -452,6 +500,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood5.PNG" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood2.PNG" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood3.PNG" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood15.PNG" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood16.PNG" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood17.PNG" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blood18.PNG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">A web application for visualizing and predicting CA19-9 levels. CA19-9 is a biomarker commonly used in cancer diagnosis, particularly for pancreatic cancer. The application utilizes ensemble learning for predictions.</p>
 
@@ -483,7 +535,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-dark" href="https://github.com/JazzSax/batuhan4" target="_blank" rel="noopener">
                                             <i class="fab fa-github me-2"></i>
                                             View on GitHub
@@ -521,7 +573,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-dark" href="https://github.com/Mercus005/Data-Analytics---Dashboard" target="_blank" rel="noopener">
                                             <i class="fab fa-github me-2"></i>
                                             View on GitHub
@@ -562,7 +614,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-info" href="https://public.tableau.com/app/profile/jonathan.russell.bunquin/viz/BalajiFastFoodDashboard/Dashboard1" target="_blank" rel="noopener">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau" style="height:1em;vertical-align:middle;margin-right:0.5em;">
                                             View on Tableau
@@ -601,7 +653,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="mb-3 hover-grow">
                                         <a class="btn btn-info" href="https://public.tableau.com/app/profile/jonathan.russell.bunquin/viz/TBBurdenCountryDashboard/Dashboard2?publish=yes" target="_blank" rel="noopener">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau" style="height:1em;vertical-align:middle;margin-right:0.5em;">
                                             View on Tableau
