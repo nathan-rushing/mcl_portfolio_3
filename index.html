@@ -16,6 +16,16 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
+
+            .badge:hover {
+                background-color: #375a7f !important;
+                color: #fff;
+                transform: scale(1.05);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+
             .contact-icon {
                 color: #0d6efd; /* Bootstrap primary color */
                 font-size: 1.2rem;
@@ -120,12 +130,39 @@
                 transform: scale(1.08);
             }
 
+            .cert-scroll {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 0.5rem;
+            }
+            .border-left-primary {
+            border-left: 5px solid #4e73df !important;
+            }
+            .border-left-success {
+            border-left: 5px solid #1cc88a !important;
+            }
+            .border-left-info {
+            border-left: 5px solid #36b9cc !important;
+            }
+
+            /* very dark gray #121212 */
+            /* electric blue #00BFFF or #1E90FF */
+            /* indigo #6610f2 */
+
+            /* dark gray #1C1C1C */
+            /* teal #00BFA6 or #1DE9B6 */
+            /* Soft Blue: #90CAF9 or #42A5F5 */
+
+            /* cliff blue #4bc5e7 */
+
+            /* practicum gray #4a4a4a */
 
         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background-color: #1C1C1C;" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Portfolio</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +180,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-dark text-light text-center">
+        <header class="masthead text-light text-center bg-dark">
             <div class="container d-flex align-items-center flex-column tech-icon ">
                 <!-- Masthead Avatar Image-->
                 <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
@@ -164,12 +201,12 @@
             </div>
         </header>
         <!-- About Section-->
-        <section class="page-section text-black mb-0 tech-icon" style="background-color: #5b7553;" id="about">
+        <section class="page-section text-black mb-0 tech-icon" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase">About</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -177,75 +214,75 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ms-auto">
-                        <p class="lead text-white">
-                            I am <span class="blinks-animate" style="color: #F5F5DC">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
+                        <p class="lead">
+                            I am <span class="blinks-animate" style="color: #6610f2">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
                         </p>
                     </div>
                     <div class="col-lg-4 me-auto">
-                        <p class="lead" style="color: #F5F5DC">Languages, Tools, and Frameworks</p>
+                        <p class="lead">Languages, Tools, and Frameworks</p>
                         <div class="d-flex flex-wrap gap-3 justify-content-start align-items-center">
                             <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" height="40"/>
-                                <span class="text-white ">Python</span>
+                                <span">Python</span>
                             </div>
                             <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" height="40"/>
-                                <span class="text-white">C#</span>
+                                <span">C#</span>
                             </div>
                             <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" height="40"/>
-                                <span class="text-white">HTML5</span>
+                                <span">HTML5</span>
                             </div>
                             <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" height="40"/>
-                                <span class="text-white">CSS3</span>
+                                <span">CSS3</span>
                             </div>
                             <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" height="40"/>
-                                <span class="text-white">JavaScript</span>
-                            </div>
-                            <div class="float-up-animate">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" height="40"/>
-                                <span class="text-white">Bootstrap</span>
+                                <span">JavaScript</span>
                             </div>
                             <div class="float-animate">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" height="40"/>
+                                <span">Bootstrap</span>
+                            </div>
+                            <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" height="40"/>
-                                <span class="text-white">Django</span>
+                                <span">Django</span>
                             </div>
                             <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" height="40"/>
-                                <span class="text-white">Flask</span>
+                                <span">Flask</span>
                             </div>
                             <div class="float-animate">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly-logo.png" alt="Plotly" height="40" style="background:#fff; border-radius:6px;"/>
-                                <span class="text-white"></span>
+                                <span"></span>
                             </div>
                             <div class="float-up-animate">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau" height="40" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png';"/>
-                                <span class="text-white"></span>
-                            </div>
-                            <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" height="40"/>
-                                <span class="text-white">SQL</span>
+                                <span">SQL</span>
                             </div>
                             <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" height="40"/>
-                                <span class="text-white">Unity</span>
+                                <span">Unity</span>
                             </div>
                             <div class="float-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" height="40"/>
-                                <span class="text-white">Git</span>
+                                <span">Git</span>
                             </div>
                             <div class="float-up-animate">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="40"/>
-                                <span class="text-white">GitHub</span>
+                                <span">GitHub</span>
+                            </div>
+                            <div class="float-animate">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau" height="40" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png';"/>
+                                <span"></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4 hover-grow">
-                    <a class="btn btn-xl btn-outline-light" href="resume.pdf" download="resume.pdf">
+                    <a class="btn btn-xl btn-outline-dark" href="resume.pdf" download="resume.pdf">
                         <i class="fas fa-download me-2"></i>
                         Download Resume
                     </a>
@@ -254,12 +291,12 @@
         </section>
 
         <!-- Portfolio Section-->
-        <section class="page-section portfolio tech-icon" id="portfolio">
+        <section class="page-section portfolio tech-icon bg-dark" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projects</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -294,7 +331,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 hover-grow">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -303,7 +340,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0 hover-grow">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -312,7 +349,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 hover-grow">
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -320,16 +357,43 @@
                             <img class="img-fluid portfolio-fixed-img" src="assets/img/portfolio/tb1.PNG" alt="..." />
                         </div>
                     </div>
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid portfolio-fixed-img" src="assets/img/portfolio/nat_zoe_allen.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid portfolio-fixed-img" src="assets/img/portfolio/mobile1.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 9-->
+                    <div class="col-md-6 col-lg-4 mb-5 hover-grow">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid portfolio-fixed-img" src="assets/img/portfolio/naruto1.jpg" alt="..." />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Practicum Section-->
-        <section class="page-section bg-dark text-light mb-0 tech-icon" id="practicum" style="font-size: 1.1rem;">
+        <section class="page-section bg-light mb-0 tech-icon" id="practicum" style="font-size: 1.1rem;">
             <div class="container">
                 <!-- Practicum Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-light" style="font-size: 2.5rem;">Practicum</h2>
+                <h2 class="page-section-heading text-center text-uppercase" style="font-size: 2.5rem;">Practicum</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -351,14 +415,14 @@
                     <div class="col-lg-4 d-flex">
                         <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
                             <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Total of Hours rendered</p>
-                            <p style="color: #e0e0e0;">From May 26, 2025 to July 28, 2025. I completed a total of <strong>324 hours.</strong></p>
+                            <p style="color: #e0e0e0;">From May 26, 2025 to July 30, 2025. I completed a total of <strong>324 hours.</strong></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-4">
                     <div class="text-center">
-                        <h4 class="lead mb-3" style="font-size: 1.4rem;">Synthesis of the Practicum Engagement</h4>
+                        <h4 class="lead mb-3 fw-bold" style="font-size: 1.4rem;">Synthesis of the Practicum Engagement</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -376,7 +440,7 @@
                 </div>
                 <!-- Practicum Section Button-->
                 <div class="text-center mt-4 hover-grow">
-                    <a class="btn btn-xl btn-outline-light" href="narrative_report.pdf" download="narrative_report.pdf">
+                    <a class="btn btn-xl btn-outline-dark" href="narrative_report.pdf" download="narrative_report.pdf">
                         <i class="fas fa-download me-2"></i>
                         Narrative Report
                     </a>
@@ -384,12 +448,94 @@
             </div>
         </section>
 
+        <!-- Certificates and Recognitions Section -->
+        <section class="page-section tech-icon bg-dark" id="contact">
+        <div class="container">
+            <!-- Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Certificates and Recognitions</h2>
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
 
+            <!-- Achievements Grid -->
+            <div class="row mt-5">
+
+            <!-- School Recognition -->
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm border-left-primary">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="fas fa-graduation-cap me-2 text-dark"></i>School Recognition</h4>
+                    <div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2021-2022 1st Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2021-2022 2nd Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2022-2023 1st Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2022-2023 2nd Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2022-2023 3rd Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2023-2024 1st Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2023-2024 2nd Term Dean's Lister</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge text-white p-2 w-100" style="min-height: 2.5em; background-color: #4a4a4a;">A.Y. 2023-2024 3rd Term Dean's Lister</div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+            <!-- Organization -->
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm border-left-success">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="fas fa-users me-2 text-success"></i>Organization</h4>
+                    <p class="mb-0 mt-2"><span class="badge bg-success">Junior Philippine Computer Society (JPCS)</span> - Member</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Other Certifications -->
+            <div class="col-md-12">
+                <div class="card shadow-sm border-left-info">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="fas fa-certificate me-2 text-info"></i>Other Certifications</h4>
+                    <div class="cert-scroll mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Wadhwani: Employability Skills - JobReady</li>
+                        <li class="list-group-item">TOEIC Certificate: Princeton Assessments and Trainings</li>
+                        <li class="list-group-item">Coursera: Django for Everybody</li>
+                        <!-- Add more items here -->
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        
         <!-- Contact Section-->
-        <section class="page-section tech-icon" id="contact">
+        <section class="page-section tech-icon bg-white text-dark id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-lightb-0">Contact Me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -664,6 +810,118 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Developed an analytics dashboard to analyze TB-related deaths, TB-HIV co-infections, and incidence rates, identifying regions with the highest burden helping users recognize areas requiring urgent intervention and understand contributing factors.</p>
                                     <p class="mb-4">Created a global heat map visualizing country population to examine potential correlations between population size, TB incidence, deaths, and prevalence.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Face Recognition Attendance</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="mb-3 hover-grow">
+                                        <a class="btn btn-warning" href="https://colab.research.google.com/drive/1SryFGcsjD-XgDZUqgmV0ScPTu3s4jn3v" target="_blank" rel="noopener">
+                                            <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Google Colab" style="height:1em;vertical-align:middle;margin-right:0.5em;">
+                                            View on Google Colab
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/nat_zoe_allen.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/nat_beach.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/nat_present.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bernard_present.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">This face recognition project uses a pre-trained model to detect faces in images and recognize their identities.</p>
+                                    <p class="mb-4">The application will can capture live video from the webcam and display the detected faces with their names, or it can process images from a folder.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Simple Slot Machine Game</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mobile1.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mobile2.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">A Simple Slot Machine Game developed using Xamarin. This will allow users to play the game on their mobile devices.</p>
+                                    <p class="mb-4">The user has to get a three icon combination to win the game.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Simple Naruto Game</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/naruto1.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/naruto2.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/naruto3.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/naruto4.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">A Simple Naruto Game developed using Java. This will be played in a console.</p>
+                                    <p class="mb-4">The user who will control Naruto should obtained coins as much the user can. The user should also avoid obstacles that could kill Naruto and lose the game.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
