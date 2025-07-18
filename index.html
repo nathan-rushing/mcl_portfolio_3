@@ -25,6 +25,9 @@
                 cursor: pointer;
             }
 
+            .shadow-sm {
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important;
+            }
 
             .contact-icon {
                 color: #0d6efd; /* Bootstrap primary color */
@@ -215,7 +218,7 @@
                 <div class="row">
                     <div class="col-lg-4 ms-auto">
                         <p class="lead">
-                            I am <span class="blinks-animate" style="color: #6610f2">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
+                            I am <span style="color: #6610f2">Jonathan Bunquin</span>, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science. This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
                         </p>
                     </div>
                     <div class="col-lg-4 me-auto">
@@ -390,55 +393,59 @@
         <!-- Practicum Section-->
         <section class="page-section bg-light mb-0 tech-icon" id="practicum" style="font-size: 1.1rem;">
             <div class="container">
-                <!-- Practicum Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase" style="font-size: 2.5rem;">Practicum</h2>
-                <!-- Icon Divider-->
+                <!-- Practicum Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase" style="font-size: 2.5rem; font-weight: 700; color: #333;">Practicum</h2>
+                
+                <!-- Icon Divider -->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Practicum Section Content-->
-                <div class="row d-flex">
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
-                            <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Company Overview</p>
-                            <p style="color: #e0e0e0;">Lattice Semiconductor is the low-power programmable leader. The company solves customer problems across the network, from Edge to Cloud, in communications, computing, industrial, automotive, and consumer markets.</p>
+
+                <!-- Practicum Section Content -->
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="p-4 bg-dark text-white rounded shadow-sm h-100 hover-grow">
+                            <h5 class="fw-bold mb-2">Company Overview</h5>
+                            <p class="text-light">Lattice Semiconductor is the low-power programmable leader. The company solves customer problems across the network, from Edge to Cloud, in communications, computing, industrial, automotive, and consumer markets.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
-                            <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Nature of Tasks given</p>
-                            <p style="color: #e0e0e0;">During my internship, I worked on dashboard tracker for the team I was assigned, developed a Python script to automate JIRA release notes, and to use Python scripts to automate images for their application.</p>
+                    <div class="col-lg-4">
+                        <div class="p-4 bg-dark text-white rounded shadow-sm h-100 hover-grow">
+                            <h5 class="fw-bold mb-2">Nature of Tasks Given</h5>
+                            <p class="text-light">During my internship, I worked on a dashboard tracker, developed a Python script to automate JIRA release notes, and used Python to automate image generation for their application.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-3 flex-fill hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem;">
-                            <p class="lead" style="font-size: 1.3rem; color: #ffffff;">Total of Hours rendered</p>
-                            <p style="color: #e0e0e0;">From May 26, 2025 to July 30, 2025. I completed a total of <strong>324 hours.</strong></p>
+                    <div class="col-lg-4">
+                        <div class="p-4 bg-dark text-white rounded shadow-sm h-100 hover-grow">
+                            <h5 class="fw-bold mb-2">Total Hours Rendered</h5>
+                            <p class="text-light">From May 26, 2025 to July 30, 2025. I completed a total of <strong>324 hours</strong>.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mt-4">
+                <!-- Synthesis Section -->
+                <div class="row mt-5">
                     <div class="text-center">
-                        <h4 class="lead mb-3 fw-bold" style="font-size: 1.4rem;">Synthesis of the Practicum Engagement</h4>
+                        <h4 class="lead fw-bold mb-3" style="font-size: 1.4rem;">Synthesis of the Practicum Engagement</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-4 mb-3 bg-dark text-light rounded shadow-sm hover-grow">
                             <p>I learned a lot during my practicum. I improved in communication and collaboration, which boosted my people skills. I also discovered that learning never stops — even in familiar tools and tasks. I explored new technologies like WebWorks ePublisher, Perforce, Linux/Unix systems, and Adobe Framemaker.</p>
                         </div>
-                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-4 mb-3 bg-dark text-light rounded shadow-sm hover-grow">
                             <p>I also observed how quickly-paced the corporate environment is. Tasks are expected to be done immediately. Though I sometimes needed extra time to learn, my father's advice helped — “Don't wait for instructions. Take initiative.” This mindset allowed me to show my willingness to contribute.</p>
                         </div>
-                        <div class="p-3 mb-3 hover-grow" style="background-color: #4a4a4a; border-radius: 0.5rem; color: #e0e0e0;">
+                        <div class="p-4 mb-3 bg-dark text-light rounded shadow-sm hover-grow">
                             <p>One challenge I faced was the delay in access to tools and accounts, which caused some stress. Despite that, I gave my best and took away many life and work lessons from this experience.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Practicum Section Button-->
+
+                <!-- Download Button -->
                 <div class="text-center mt-4 hover-grow">
                     <a class="btn btn-xl btn-outline-dark" href="narrative_report.pdf" download="narrative_report.pdf">
                         <i class="fas fa-download me-2"></i>
@@ -447,6 +454,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Certificates and Recognitions Section -->
         <section class="page-section tech-icon bg-dark" id="contact">

@@ -10813,6 +10813,16 @@ html {
 
 .page-section {
   padding: 6rem 0;
+
+  /* new inserts yung sa baba */
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -10948,9 +10958,20 @@ html {
   color: #6c757d;
 }
 
-.masthead {
+/* .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+} */
+
+.masthead {
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10962,6 +10983,7 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
 }
+
 
 @media (min-width: 992px) {
   .masthead {
